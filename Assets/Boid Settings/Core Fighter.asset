@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d4893d85197b044dbf078243d8a7681, type: 3}
+  m_Name: Core Fighter
+  m_EditorClassIdentifier: 
+  minSpeed: 10
+  maxSpeed: 50
+  arrivalRadius: 3
+  perceptionRadius: 2.5
+  avoidanceRadius: 1
+  maxSteerForce: 5
+  alignWeight: 0
+  cohesionWeight: 0
+  seperateWeight: 0
+  targetWeight: 1
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 256
+  boundsRadius: 1
+  avoidCollisionWeight: 70
+  collisionAvoidDst: 20
+  evadeWeight: 1
+  fleeRadius: 100
+  repellerMask:
+    serializedVersion: 2
+    m_Bits: 512
+  fleeWeight: 20
+  fleeDistance: 10
+  fleeForce: 0
