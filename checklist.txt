@@ -1,0 +1,45 @@
+Kshatriya = Player
+Funnels = Boids
+Core Fighter  = Attractor
+Mines = Repeller
+
+Kshatriya behavior (on manual control):
+> Movement
+	> W, A, S, D - front, left, back, right
+	> Spacebar - Up
+	> Ctrl - Down
+> Spawn Funnels (multiple buttons that spawns funnels of different behaviors) -PRIORITY-
+> Will always face towards the core fighter
+
+Funnels behavior:
+[DONE]	- On spawn, seeks core fighter
+	- Once approaches core fighter at a certain distance, will stop and shoot
+	- Can shoot 3 times before must return back to kshatriya
+	- Flee from asteroid and mines
+
+Core fighter behavior:
+[DONE]	- Wander -PRIORITY-
+[DONE]	- Flee (from Kshatriya and Funnels)
+	- Spawns a mine once every few seconds
+	- Dies if hit 3 times
+
+Mines behavior:
+	- Seek closest funnel -PRIORITY-
+
+Asteroid behavior:
+[DONE]	- Slight drift / movement
+	- Will deal 1 damage to anyone who hits it
+
+Game Over condition:
+	- Win = Core fighter explodes
+	- Lose = Kshatriya explodes
+
+Priorities:
+3. Add boids control panel
+
+Name_ID_AI_Boids.zip
+
+Mine behavior:
+- Mine will calculate through all funnels
+- Gets closest funnel and seeks it
+- If reaches arrival radius, explodes and kills both mine and funnel
